@@ -1,0 +1,18 @@
+[project]
+name = "scientific-data-explorer"
+version = "0.1.0"
+description = "Scientific data exploration pipeline"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas",
+  "numpy",
+  "scipy",
+  "matplotlib",
+  "seaborn",
+  "rich",
+  "pytest",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [".", "backend/src"]
+testpaths = ["../tests"]
